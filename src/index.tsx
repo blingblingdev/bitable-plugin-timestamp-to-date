@@ -42,8 +42,12 @@ const LoadApp = () => {
       // Fetch active table data asynchronously
       const table = await bitable.base.getActiveTable();
       setTable(table);
-      const fields = await table.getFieldListByType(FieldType.Text);
       const options: OptionProps[] = [];
+      let fields = await table.getFieldListByType(FieldType.Text);
+      for (const field of fields) {
+        options.push({ value: field.id, label: await field.getName() });
+      }
+      fields = await table.getFieldListByType(FieldType.Number);
       for (const field of fields) {
         options.push({ value: field.id, label: await field.getName() });
       }
