@@ -1,4 +1,10 @@
 {
     "initializingText": "加载表格中...",
-    "title": "多维表格插件模板"
+    "title": "选择一列待转换的时间戳",
+    "selectPlaceholder": "请选择字段",
+    "checkboxText": "毫秒",
+    "convertButtonText": "转换",
+    "convertButtonLoadingText": "转换中",
+    "newFieldNamePrefix": "新 ",
+    "note": "1. 当前仅支持文本类型和数字类型字段中的时间戳转换为日期格式\n2. 转换后将新增一列日期字段，内容为时间戳转换后对应的日期\n3.可根据需要选择输入时间戳的精度，不支持多种精度混合"
 }

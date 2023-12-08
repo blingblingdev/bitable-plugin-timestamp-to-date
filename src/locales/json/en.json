@@ -1,4 +1,10 @@
 {
     "initializingText": "Loading...",
-    "title": "Bitable Plugin Template"
+    "title": "Choose a timestamp field to start",
+    "selectPlaceholder": "Pick a field",
+    "checkboxText": "ms",
+    "convertButtonText": "Convert",
+    "convertButtonLoadingText": "Converting",
+    "newFieldNamePrefix": "New ",
+    "note": "1. Currently, only timestamp conversion from text and number-type fields to date format is supported.\n2. After conversion, a new date column will be added, containing the corresponding dates of the converted timestamps.\n3. You can choose the precision of input timestamps based on your needs. Mixing multiple precisions is not supported."
 }

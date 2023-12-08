@@ -1,5 +1,5 @@
 {
-  "name": "bitable-plugin-template",
+  "name": "bitable-plugin-timestamp-to-date",
   "version": "1.0.0",
   "type": "module",
   "description": "Bitable Plugin Template is a React application designed to be a react application template for the Bitable platform.",
@@ -7,7 +7,8 @@
     "start": "npm run dev",
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint  src/ --color --ext .ts"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
   "dependencies": {
     "@douyinfe/semi-ui": "^2.48.0",
     "@lark-base-open/js-sdk": "^0.3.5",
+    "dayjs": "^1.11.10",
     "i18next": "^23.2.3",
     "i18next-browser-languagedetector": "^7.2.0",
     "react-i18next": "^13.5.0"
@@ -23,7 +25,14 @@
     "@types/json2md": "^1.5.4",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
     "@vitejs/plugin-react": "^2.0.0",
+    "eslint": "^8.55.0",
+    "eslint-plugin-prefer-arrow-functions": "^3.2.4",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-security": "^1.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^4.7.4",
